@@ -2,7 +2,7 @@
 
 const express = require('express');
 
-const Clothes = require('../models/food');
+const Clothes = require('../models/clothes');
 const GenericCollection = require('../models/data-collection-class');
 const clothes = new GenericCollection(Clothes)
 

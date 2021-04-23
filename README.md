@@ -33,7 +33,6 @@ i.e.
 - 404 on a bad route
 - 404 on a bad method
 - 500 errors handler
-- 200 if routes work properly
-- 201 if POST / route (update) works properly
+
 
 ### WRRC

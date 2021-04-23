@@ -1,6 +1,5 @@
 'use strict'
 
-const foodSchema = require('./food');
 
 class GenericCollection {
   constructor(model){
