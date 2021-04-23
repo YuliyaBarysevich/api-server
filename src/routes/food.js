@@ -22,7 +22,7 @@ async function getFood(req, res) {
 }
 
 async function getOneProduct(req, res){
-  const id = parseInt(req.params.id);
+  const id = req.params.id;
   let getOneProduct = await food.read(id);
   res.status(200).json(getOneProduct);
 }
@@ -34,14 +34,14 @@ async function createFood(req, res){
 }
 
 async function updateFood(req, res){
-  const id = parseInt(req.params.id);
+  const id = req.params.id;
   let foodContent = req.body;
   let newFood = await food.update(id, foodContent);
   res.status(200).json(newFood);
 }
 
 async function deleteFood(req, res){
-  const id = parseInt(req.params.id);
+  const id = req.params.id;
   await food.delete(id);
   res.status(200).json(null);
 
