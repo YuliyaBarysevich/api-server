@@ -22,7 +22,7 @@ async function getClothes(req, res) {
 }
 
 async function getOneItem(req, res){
-  const id = parseInt(req.params.id);
+  const id = req.params.id;
   let getOneThing = await clothes.read(id);
   res.status(200).json(getOneThing);
 }
@@ -34,14 +34,14 @@ async function createItem(req, res){
 }
 
 async function updateClothes(req, res){
-  const id = parseInt(req.params.id);
+  const id = req.params.id;
   let clothesInfo = req.body;
   let newItem = await clothes.update(id, clothesInfo);
   res.status(200).json(newItem);
 }
 
 async function deleteClothes (req, res){
-  const id = parseInt(req.params.id);
+  const id = req.params.id;
   await clothes.delete(id);
   res.status(200).json(null);
 
