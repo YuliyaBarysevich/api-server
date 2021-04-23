@@ -9,9 +9,14 @@
 
 1. Deployed with Heroku (2 routes)
 
+    - [https://barysevich-api-server.herokuapp.com/](https://barysevich-api-server.herokuapp.com/)
+
 
 
 2. Github URLs
+
+    - [https://github.com/YuliyaBarysevich/api-server/runs/2417056780](https://github.com/YuliyaBarysevich/api-server/runs/2417056780)
+    - [https://github.com/YuliyaBarysevich/api-server/pull/1](https://github.com/YuliyaBarysevich/api-server/pull/1)
   
 
 
