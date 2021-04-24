@@ -43,18 +43,25 @@ describe ('Food Actions', () => {
       })
   })
 
-  it('can update() a food item', () => {
-    let obj = { }
-  })
+  // it('can update() a food item', () => {
+  //   let obj = { hello: 'test food', world: 300, price: 25 };
+  //   let expected = { product: 'test food', calories: 300, price: 25 };
+
+  //   return food.create(obj)
+  //   .then(record => {
+  //     return food.update(_id, record)
+  //       .then()
+  //   })
+  // })
 
   it('can read() a single food item', () => {
     let obj = { product: 'test food', calories: 300, price: 25 };
 
     return food.create(obj)
       .then(record => {
-        return clothes.read(record._id)
+        return food.read(record._id)
           .then(item => {
-            console.log('this should be test clothes 1', item)
+            console.log('this should be test food 1', item)
           })
       })
   })
@@ -64,24 +71,26 @@ describe ('Food Actions', () => {
 
     return food.create(obj)
       .then(record => {
-        return clothes.read(record)
+        return food.read(record)
           .then(item => {
-            console.log('this should be test clothes 1', item)
+            console.log('this should be test food 2', item)
           })
       })
   })
 
-  it('can delete() a single clothes item', () => {
-    let obj = { product: 'test food', calories: 300, price: 25 };
+  // it('can delete() a single food item', () => {
+  //   let obj = { product: 'test food', calories: 300, price: 25 };
 
-    return food.create(obj)
-      .then(record => {
-        return clothes.delete(record._id)
-          .then(item => {
-            expect(record[item]).toBeFalsy()
-          })
-      })
-  })
+  //   return food.create(obj)
+  //     .then(record => {
+  //       return food.delete(record._id)
+  //         .then(item => {
+  //           console.log(food)
+  //           expect(item).toBeFalsy()
+  //           console.log('Heeeeeeeey', item)
+  //         })
+  //     })
+  // })
 
 })
 
@@ -120,23 +129,22 @@ describe ('Clothes Actions ', () => {
       .then(record => {
         return clothes.read(record)
           .then(item => {
-            console.log('this should be test clothes 1', item)
+            console.log('this should be test clothes 2', item)
           })
       })
   })
 
-  it('can delete() a single clothes item from DB', () => {
-    let obj = { type: 'test clothes', color: 'blue', gender: 'female'}
-    // let expected = { type: 'test clothes', color: 'blue', gender: 'female'}
+  // it('can delete() a single clothes item from DB', () => {
+  //   let obj = { type: 'test clothes', color: 'blue', gender: 'female'}
 
-    return clothes.create(obj)
-      .then(record => {
-        return clothes.delete(record._id)
-          .then(item => {
-            expect(record[item]).toBeFalsy()
-          })
-      })
-  })
+  //   return clothes.create(obj)
+  //     .then(record => {
+  //       return clothes.delete(record._id)
+  //         .then(item => {
+  //           expect(record[item]).toBeFalsy()
+  //         })
+  //     })
+  // })
 
 })
 
