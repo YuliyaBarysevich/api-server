@@ -41,3 +41,5 @@ i.e.
 
 
 ### WRRC
+
+![WRRC](assets/basic-api-server.png)
