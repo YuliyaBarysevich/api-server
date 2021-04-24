@@ -43,6 +43,10 @@ describe ('Food Actions', () => {
       })
   })
 
+  it('can update() a food item', () => {
+    let obj = { }
+  })
+
   it('can read() a single food item', () => {
     let obj = { product: 'test food', calories: 300, price: 25 };
 
