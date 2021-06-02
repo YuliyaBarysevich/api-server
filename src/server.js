@@ -7,6 +7,7 @@ const app = express();
 const logger = require('./middleware/logger')
 const foodRoutes = require('./routes/food')
 const clothesRoutes = require('./routes/clothes')
+const todoRoutes = require('./routes/todo.js')
 
 
 const notFound = require('./error-handlers/404');
@@ -17,6 +18,7 @@ app.use(express.json())
 app.use(logger)
 app.use(foodRoutes)
 app.use(clothesRoutes)
+app.use(todoRoutes)
 
 
 app.use('*', notFound)
